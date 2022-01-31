@@ -1,3 +1,7 @@
+package Task1_Rectangles;
+
+import Task1_Rectangles.DataProvider;
+
 import java.awt.*;
 
 import java.util.LinkedList;

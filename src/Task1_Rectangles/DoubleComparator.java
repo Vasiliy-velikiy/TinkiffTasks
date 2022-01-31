@@ -1,3 +1,5 @@
+package Task1_Rectangles;
+
 import java.util.Comparator;
 
 public class DoubleComparator implements Comparator<Double> {

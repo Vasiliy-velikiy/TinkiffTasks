@@ -1,3 +1,5 @@
+package Task1_Rectangles;
+
 import java.util.List;
 
 public class ConsoleDataOutput implements DataOutput<Point> {

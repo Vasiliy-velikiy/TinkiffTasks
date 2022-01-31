@@ -1,3 +1,5 @@
+package Task1_Rectangles;
+
 public class Point {
     private double x;
     private double y;

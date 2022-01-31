@@ -1,3 +1,7 @@
+package Task1_Rectangles;
+
+import Task1_Rectangles.*;
+
 import java.awt.*;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -6,7 +10,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         DataProvider<Double> dataProvider=new ConsoleDataProvider();
-        DataOutput<Point>  dataOutput=new ConsoleDataOutput();
+        DataOutput<Point> dataOutput= new ConsoleDataOutput();
 
         List<Double> list=dataProvider.getData();
         double firstpoin=list.get(0);

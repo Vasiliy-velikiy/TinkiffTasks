@@ -1,8 +1,14 @@
+package Task1_Rectangles;
+
+import Task1_Rectangles.DoubleComparator;
+import Task1_Rectangles.Point;
+import Task1_Rectangles.Ractangle;
+
 public class Solution {
    static final double delta=0.00001;
    private static final DoubleComparator doubleComparator=new DoubleComparator();
 
-   public static Point solution( Ractangle ractangle1, Ractangle ractangle2){
+   public static Point solution(Ractangle ractangle1, Ractangle ractangle2){
    Ractangle minractangle = ractangle1.square() > ractangle2.square() ? ractangle2 : ractangle1;
    Ractangle bigractangle = ractangle1.square() < ractangle2.square() ? ractangle2 : ractangle1;
 

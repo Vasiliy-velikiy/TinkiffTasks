@@ -1,3 +1,5 @@
+package Task1_Rectangles;
+
 public class Ractangle {
 
     private Angle[]mass=new Angle[4];
