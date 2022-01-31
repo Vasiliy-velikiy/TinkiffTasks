@@ -19,11 +19,15 @@ public class Ractangle {
    public double square(){
         double maxX =0;
         double maxY =0;
+        double minX =mass[0].point.getX();
+        double minY =mass[0].point.getY();
        for(Angle angle:mass){
            if (maxX <angle.point.getX()) maxX =angle.point.getX();
            if (maxY <angle.point.getY()) maxY =angle.point.getY();
+           if (minX>angle.point.getX())  minX =angle.point.getX();
+           if (minY>angle.point.getY())  minY =angle.point.getY();
        }
-       return maxX*maxY;
+       return (maxX-minX)*(maxY-minY);
 
    }
 
