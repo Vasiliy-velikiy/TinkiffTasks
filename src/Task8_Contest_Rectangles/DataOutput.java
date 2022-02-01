@@ -1,6 +1,4 @@
-package Task1_Rectangles;
-
-import java.util.List;
+package Task8_Contest_Rectangles;
 
 public interface DataOutput<T> {
 

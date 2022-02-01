@@ -1,4 +1,4 @@
-package Task1_Rectangles;
+package Task8_Contest_Rectangles;
 
 import java.util.List;
 

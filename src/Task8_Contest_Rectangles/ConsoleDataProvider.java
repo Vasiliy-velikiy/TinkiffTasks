@@ -1,8 +1,4 @@
-package Task1_Rectangles;
-
-import Task1_Rectangles.DataProvider;
-
-import java.awt.*;
+package Task8_Contest_Rectangles;
 
 import java.util.LinkedList;
 import java.util.Scanner;

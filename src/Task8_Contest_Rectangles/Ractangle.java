@@ -1,4 +1,4 @@
-package Task1_Rectangles;
+package Task8_Contest_Rectangles;
 
 public class Ractangle {
 
@@ -32,7 +32,7 @@ public class Ractangle {
    }
 
    private double maxX(){
-        double maxX=0;
+        double maxX=mass[0].point.getX();
        for(Angle angle:mass){
            if (maxX <angle.point.getX()) maxX =angle.point.getX();
        }

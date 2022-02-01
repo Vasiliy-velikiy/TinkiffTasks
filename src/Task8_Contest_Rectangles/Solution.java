@@ -1,8 +1,4 @@
-package Task1_Rectangles;
-
-import Task1_Rectangles.DoubleComparator;
-import Task1_Rectangles.Point;
-import Task1_Rectangles.Ractangle;
+package Task8_Contest_Rectangles;
 
 public class Solution {
    static final double delta=0.00001;
@@ -13,18 +9,21 @@ public class Solution {
    Ractangle bigractangle = ractangle1.square() < ractangle2.square() ? ractangle2 : ractangle1;
 
    Point startPointMinRect=minractangle.getMinPoint();
-   Point endPointMinRect=minractangle.getMaxPoint();
+   Point endPointMinRect=minractangle.getMaxPoint(); //находит макс х но не находим макс у
 
    Point startPointBigRect=bigractangle.getMinPoint();
    Point endPointBigRect=bigractangle.getMaxPoint();
-
-      for (double x = startPointMinRect.getX() ; doubleComparator.compare(x,endPointMinRect.getX()) != 0; x+=delta) {
-         for (double y = startPointMinRect.getY(); doubleComparator.compare(y,endPointMinRect.getY()) != 0; y+=delta) {
+double xEnd=endPointMinRect.getX();
+double yEnd=endPointMinRect.getY();
+     // for (double x = startPointMinRect.getX() ; doubleComparator.compare(x,endPointMinRect.getX()) !=0; x+=delta) {
+      for (double x = startPointMinRect.getX() ; x<=xEnd; x+=delta) {
+        for (double y = startPointMinRect.getY(); y<=yEnd; y+=delta) {
+    //    for (double y = startPointMinRect.getY(); doubleComparator.compare(y,endPointMinRect.getY()) != 0; y+=delta) {
               double boundXSmallrect= endPointMinRect.getX()-x;
-              double boundXBigrect= endPointBigRect.getX()-x;
+              double boundXBigrect= endPointBigRect.getX();
 
               double boundYSmallrect= endPointMinRect.getY()-y;
-              double boundYBigrect=  endPointBigRect.getY()-y;
+              double boundYBigrect=  endPointBigRect.getY();
 
              double ratioSmall= boundXSmallrect/boundYSmallrect;
              double ratioBig=boundXBigrect/boundYBigrect;

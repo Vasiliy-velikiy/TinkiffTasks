@@ -1,10 +1,5 @@
-package Task1_Rectangles;
+package Task8_Contest_Rectangles;
 
-import Task1_Rectangles.*;
-
-import java.awt.*;
-import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
