@@ -59,53 +59,53 @@ a=3, x{2}=25-3=22
 
 import java.util.*;
 public class Task3 {
-
-
-    private static final Scanner sc;
-
-    static {
-        sc = new Scanner(System.in);
-    }
-    public static void main(String[] args) {
-   Long[] number=getData(1);
-   Long[] numbers=getData(Math.toIntExact(number[0]));
-
-   long x0=1;//начинаем с положительного
-
-   Set<Long> treeset=new TreeSet<Long>(Arrays.asList(numbers));
-   ArrayList<Long> arrayList=new ArrayList(treeset);
-       
-       // System.out.println(treeset);
-
-        int i=0; //переменная для итерации
-        long temp=x0;
-        for (; i <treeset.size() ;) {
-
-         long result= (long) Math.pow(temp,2)-arrayList.get(i);
-         if (result<=0){
-             i=0;
-             temp=++x0;
-         }
-         if(result>0){
-             ++i;
-            temp=result;
-         }
-        }
-        System.out.println(x0);
-
-    }
-
-
-    private static Long[] getData(int n) {
-        if (sc.hasNext()) {
-            String input = sc.nextLine();
-            String[] inputValues = input.split(" ");
-            Long[] userData = new Long[n];
-            for (int i = 0; i < inputValues.length; i++) {
-                userData[i] = Long.parseLong(inputValues[i]);
-            }
-            return userData;
-        }
-        return null;
-    }
+//
+//
+//    private static final Scanner sc;
+//
+//    static {
+//        sc = new Scanner(System.in);
+//    }
+   public static void main(String[] args) {
+//   Long[] number=getData(1);
+//   Long[] numbers=getData(Math.toIntExact(number[0]));
+//
+//   long x0=1;//начинаем с положительного
+//
+//   Set<Long> treeset=new TreeSet<Long>(Arrays.asList(numbers));
+//   ArrayList<Long> arrayList=new ArrayList(treeset);
+//
+//       // System.out.println(treeset);
+//
+//        int i=0; //переменная для итерации
+//        long temp=x0;
+//        for (; i <treeset.size() ;) {
+//
+//         long result= (long) Math.pow(temp,2)-arrayList.get(i);
+//         if (result<=0){
+//             i=0;
+//             temp=++x0;
+//         }
+//         if(result>0){
+//             ++i;
+//            temp=result;
+//         }
+//        }
+//        System.out.println(x0);
+//
+//    }
+//
+//
+//    private static Long[] getData(int n) {
+//        if (sc.hasNext()) {
+//            String input = sc.nextLine();
+//            String[] inputValues = input.split(" ");
+//            Long[] userData = new Long[n];
+//            for (int i = 0; i < inputValues.length; i++) {
+//                userData[i] = Long.parseLong(inputValues[i]);
+//            }
+//            return userData;
+//        }
+//        return null;
+  }
 }
